@@ -21,7 +21,9 @@ services:
     environment:
       PMA_HOST: db
       PMA_PORT: 3306
-      PMA_ARBITRARY: 1
+      PMA_ARBITRARY: 0
+      # PMA_USER: root
+      # PMA_PASSWORD: 123qaz
     restart: always
     ports:
       - 8081:80
